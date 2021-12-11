@@ -13,7 +13,7 @@ typedef struct _ThreadPool ThreadPool;
 
 void ThreadPool_shutdown(ThreadPool* pool);
 
-void ThreadPool_submit(ThreadPool* pool, Runnable runnable);
+void ThreadPool_submit(ThreadPool* pool, Runnable* runnable);
 
 
 ThreadPool* ThreadPool_create(int corePoolSize, int maximumPoolSize, long keepAliveTime);
